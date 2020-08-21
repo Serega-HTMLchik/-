@@ -1,0 +1,431 @@
+/*ВЫПАДАЮЩЕЕ МЕНЮ*/
+
+.topmenu{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 55px;
+    font-weight: bold;
+    color: white;
+    font-family:  Times New Roman;
+    font-size: 18px;
+    
+}
+.topmenu .li_nav{
+    
+    display: inline-block;
+    position: relative;
+    border-bottom: 5px solid black;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.topmenu .li_nav:hover{
+    background-color: white;
+    border-bottom: 5px solid red;
+    color: black;
+}
+.topmenu .li_nav:hover .submenu{
+    top:50px;
+    left: -20px;
+    opacity: 1px;
+}
+.submenu {
+    width: 200px;
+  text-align: center;
+  background: white;
+  border: 2px solid white;
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+  padding-left: 0;
+    color: black;
+    z-index: 1;
+}
+
+.submenu{
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    transition: 0.25s linear opacity; 
+}
+.submenu .li_nav_sub:hover{
+    background-color: #cccc;
+    transition: background-color 0.1s ease;
+}
+.li_nav_sub{
+line-height: 25px;
+padding-bottom: 1px;
+padding-top: 1px;
+}
+.search{
+    display: inline-block;
+    position: relative;
+}
+.search_input{
+    border-radius: 10px;
+    height: 30px;
+    width: 220px;
+    padding: 5px 8px;
+    border: 1px solid white;
+}
+.search_button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
+    border-bottom-color: white;
+    background-color: black;
+    box-shadow: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Times New Roman;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.search_button:active{
+    opacity: 0.75;
+    
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.table_td{
+    padding: 0 0 5px 0;
+}
+/*Конец*/
+nav{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: inline-table;
+    z-index: 1;
+    box-shadow:0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.img02{
+    
+    width: 300px;
+    height: 300px;
+}
+.div_index{
+    padding-left: 60px;
+}
+.gln{
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color: white;
+    color: black;
+    border-top: 2px solid red;
+    
+    
+}
+h2{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 5px;
+}
+.headerH2{
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: white;
+    color: black;
+    border-color: blue;
+}
+.a_index{
+    text-decoration: none;
+    
+}
+.p_index1{
+    
+    font-size: 19px;
+    font-family:Times New Roman;
+}
+.p_index{
+    margin-top: 50px;
+    font-size: 19px;
+    font-family:Times New Roman;
+}
+.td_index{
+    padding: 0;
+}
+footer{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #1a1716;
+    left: 0px;
+    border-top: 2px solid red;
+    
+}
+/* СТИЛИ ДЛЯ ФУТЕРА */
+.footer{
+    display: inline-table;
+    position: relative;
+    background-color: #1a1716;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    opacity: 0.7;
+    transition: color 0.3s ease;
+  
+}
+.footer:hover{
+    color: red;
+}
+.p_footer{
+    margin-top: 100px;
+    color: gray;
+}
+/* СТИЛИ ДЛЯ СТРАНИЦЫ КОНТАКТЫ*/
+:focus{
+    outline: none;
+}
+label{
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+.ulclass{
+    width: 750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+.li_form{
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.form{
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    transition: padding .25s;
+    padding-right: 30px;
+}
+textarea{
+    padding: 8px;
+    width: 300px;
+     border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    transition: padding .25s;
+    padding-right: 30px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+.form:focus{
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+textarea:focus{
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+.form_button{
+    width: auto;
+    height: 40px;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Times New Roman;
+    border-radius: 5px;
+    margin-left: 156px;
+}
+label{
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+.form_button:hover{
+    opacity: .85;
+}
+.form_button:active{
+    border: 1px solid grey;
+    box-shadow: 0 0 10px 5px #333333 inset;
+}
+.form:focus{
+    padding-right: 70px;
+    
+}
+textarea:focus{
+    padding-right: 70px;
+}
+.form:focus:invalid{
+    background: #fff url(003.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+textarea:focus:invalid{
+    background: #fff url(003.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+.form:required:valid{
+    background: #fff url(002.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+textarea:required:valid{
+    background: #fff url(002.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.contact_form{
+  margin-top: 50px;  
+}
+/* КОНЕЦ*/
+/*СТИЛИ ДЛЯ СТРАНИЦЫ РОДИТЕЛЯМ*/
+.div_gln{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+    transition: padding .25s;
+    padding-right: 0px;
+}
+.a_gln{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.img03{
+    width: 15%;
+    height: 15%;
+    float: right;
+}
+.pamitka{
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+.liclass{
+    padding: 12px;
+    
+    position: relative;
+}
+.a_gln:hover{
+    color: red;
+}
+/*КОНЕЦ*/
+/*СТИЛИ ДЛЯ СТРАНИЦЫ ПЕДАГОГАМ*/
+.geograf{
+    float: left;
+    margin-left: 50px;
+}
+.chim{
+    float: right;
+    margin-right: 50px;
+}
+th{
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+td{
+    padding: 10px 0 10px 0;
+}
+.p_teaher{
+    margin-top: 400px;
+}
+/*СТИЛИ ДЛЯ СТРАНИЦЫ КЛАССНОЕ РУКОВОДСТВО*/
+.class_guide{
+    margin-left: auto;
+    margin-right: auto;
+}
+img.img_class{
+    width: 100%;
+    opacity:0.5; 
+    
+}
+
+.class_guide_p{
+    text-align: center;
+}
+
+/*СТИЛИ ДЛЯ СТРАНИЦЫ УЧАЩИМСЯ*/
+.gln_student_p{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    padding-bottom: 22px;
+    transition: padding .25s;
+    padding-right: 0px;
+}
+/*Конец*/
+/*СТИЛИ ДЛЯ СТРАНИЦЫ ОБ АВТОРЕ*/
+.autor_div{
+   padding-left: 30px;
+}
+.img002{
+    width: 300px;
+    height: 300px;
+}
+.li_autor{
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+/*СТИЛИ ДЛЯ СМАРТФОНА*/
+@media screen and (orientation: portrait) and (min-device-width : 320px) and (max-device-width : 700px){
+    .search_input{
+        display: none;
+    }
+    .search_button{
+        display: none;
+    }
+    /*СТИЛИ ДЛЯ СТРАНИЦЫ ПЕДАГОГАМ*/
+    .geograf{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chim{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th{
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    td{
+        padding: 10px 0 10px 0;
+    }
+    .p_teaher{
+        margin-top: 400px;
+    }
+    /*КОНЕЦ*/
+}
